@@ -2,9 +2,8 @@ from django.shortcuts import render
 
 
 # Create your views here.
-def glavni(request):
+def base(request):
    data = {
-      "name": "azaazaza",
-      "number": 12,
+      "games": get_all_games()
    }
    return render(request, "main/index.html", data)

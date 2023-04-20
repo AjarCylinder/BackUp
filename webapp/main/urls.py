@@ -3,5 +3,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.glavni)
+    path('', views.glavni),
+    path('/wishlist', views.base)
 ]
